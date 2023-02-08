@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="dycalendar.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <section>
+        <div class="box">
+            <div class="container"></div>
+            <div id="dycalendar"></div>
+        </div>
+    </section>
+    <script src="dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            heiglighttargetdate: true,
+            prevnextbutton: 'show'
+        });
+    </script>
+</body>
+</html>
